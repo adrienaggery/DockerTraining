@@ -1,4 +1,4 @@
-# TP 01 Image pour un serveur web
+# TP 02 Image pour un serveur web
 
 ## Pré-requis
 
@@ -29,9 +29,8 @@ node dist/server.js
 
 ## Objectif
 
-Ecrire un Dockerfile en 2 stages qui, compile le projet dans le premier et genere l'image finale dans le deuxieme.
+Ecrire un Dockerfile qui, apres être buildé lance le server web node.
 
-L'image finale ne doit pas contenir les sources du projet, uniquement la compilation.
+Utilisation des instruction `FROM`, `WORKDIR`, `COPY`, `RUN` et `CMD`
 
-L'image finale ne doit egalement pas contenir les dependances de dev.
-
+Lancer le conteneur en précisant un volume à monter pour que le serveur web puisse écrire ses logs dans /data
